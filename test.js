@@ -1,9 +1,6 @@
 const arr = abc => {
-for(const ar of arr) {
-if() {
-
-   
-}
-
-}
-}
+  for (const ar of arr) {
+    if (ar) {
+    }
+  }
+};
