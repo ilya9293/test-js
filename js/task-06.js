@@ -1,11 +1,9 @@
-const form = document.querySelector("#validation-input");
+const form = document.querySelector('#validation-input');
 
-form.addEventListener("blur", onLoseFocus);
+form.addEventListener('blur', onLoseFocus);
 
-function onLoseFocus () {
-   if(form.value >= 6) {
-      form.classList = valid;
-   } else {
-      form.classList = invalid
-   }
+function onLoseFocus() {
+  form.value.length >= form.dataset.length
+    ? (form.classList = 'valid')
+    : (form.classList = 'invalid');
 }
